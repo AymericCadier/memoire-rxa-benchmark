@@ -1,0 +1,972 @@
+2026-08-22 14:35:07,295 [INFO] Lancement en parallèle de 4 modèles... (log : logs\run_20260822_143507.log)
+2026-08-22 14:35:07,456 [INFO] [gemini-3.5-flash-lite] 174 textes déjà traités, reprise.
+2026-08-22 14:35:07,457 [INFO] [@cf/meta/llama-3.3-70b-instruct-fp8-fast] 181 textes déjà traités, reprise.
+2026-08-22 14:35:07,460 [INFO] [openai/gpt-oss-120b] 173 textes déjà traités, reprise.
+2026-08-22 14:35:07,462 [INFO] [mistral-large-latest] 121 textes déjà traités, reprise.
+2026-08-22 14:35:08,347 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:35:08,833 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:08,933 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:08,950 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:11,541 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:11,690 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:35:11,960 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:14,031 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:14,268 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:15,041 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:35:15,242 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:17,031 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:17,890 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:18,380 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:35:19,072 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:19,727 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:20,643 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:21,720 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:35:22,449 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:23,616 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:24,073 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:25,094 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:35:25,170 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:26,408 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:27,881 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:28,436 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:35:28,585 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:35:28,585 [INFO] Retrying request to /chat/completions in 0.434884 seconds
+2026-08-22 14:35:28,990 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:29,102 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:35:29,102 [INFO] Retrying request to /chat/completions in 0.909384 seconds
+2026-08-22 14:35:30,088 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:35:30,102 [WARNING] [mistral-large-latest] retard/erreur -> attente 2.8s (essai 1/8)
+2026-08-22 14:35:30,610 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:31,750 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:31,782 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:35:33,028 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:35:33,028 [INFO] Retrying request to /chat/completions in 0.404614 seconds
+2026-08-22 14:35:33,446 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:33,537 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:35:33,537 [INFO] Retrying request to /chat/completions in 0.885923 seconds
+2026-08-22 14:35:34,517 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:35:34,521 [WARNING] [mistral-large-latest] retard/erreur -> attente 4.6s (essai 2/8)
+2026-08-22 14:35:34,550 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:35,136 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:35:36,163 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:37,206 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:38,477 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:35:38,892 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:39,185 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:35:39,191 [INFO] Retrying request to /chat/completions in 0.481610 seconds
+2026-08-22 14:35:39,815 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:35:39,817 [INFO] Retrying request to /chat/completions in 0.989594 seconds
+2026-08-22 14:35:39,977 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:40,991 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:35:40,991 [WARNING] [mistral-large-latest] retard/erreur -> attente 8.3s (essai 3/8)
+2026-08-22 14:35:41,634 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:41,821 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:35:42,912 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:44,350 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:45,159 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:35:45,768 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:47,390 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:48,514 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:35:48,775 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:49,453 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:35:49,453 [INFO] Retrying request to /chat/completions in 0.442251 seconds
+2026-08-22 14:35:49,992 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:35:49,992 [INFO] Retrying request to /chat/completions in 0.851653 seconds
+2026-08-22 14:35:50,222 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:50,927 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:35:50,943 [WARNING] [mistral-large-latest] retard/erreur -> attente 16.2s (essai 4/8)
+2026-08-22 14:35:51,406 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:51,875 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:35:52,973 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:54,201 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:55,282 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:35:55,689 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:56,822 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:58,392 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:35:58,631 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:35:59,577 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:01,094 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:01,119 [INFO] [gemini-3.5-flash-lite] 194/1500 textes traités (0 erreurs de parsing/réponse)
+2026-08-22 14:36:01,959 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:36:02,047 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:02,066 [INFO] [openai/gpt-oss-120b] 193/1500 textes traités (0 erreurs de parsing/réponse)
+2026-08-22 14:36:03,827 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:05,036 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:05,296 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:36:06,593 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:07,809 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:07,945 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:08,655 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:36:09,299 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:11,026 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:11,993 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:36:12,003 [INFO] [@cf/meta/llama-3.3-70b-instruct-fp8-fast] 201/1500 textes traités (20 erreurs de parsing/réponse)
+2026-08-22 14:36:12,003 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:12,987 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:13,698 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:14,704 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:15,325 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:36:16,422 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:17,463 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:18,046 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:18,678 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:36:19,573 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:20,187 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:22,024 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:36:22,520 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:22,922 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:23,081 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:25,368 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:36:25,640 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:25,779 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:27,609 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:27,609 [INFO] Retrying request to /chat/completions in 0.451968 seconds
+2026-08-22 14:36:28,150 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:28,150 [INFO] Retrying request to /chat/completions in 0.981347 seconds
+2026-08-22 14:36:28,386 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:28,495 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:28,691 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:36:29,225 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:29,225 [WARNING] [mistral-large-latest] retard/erreur -> attente 2.0s (essai 1/8)
+2026-08-22 14:36:30,751 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:30,760 [INFO] Retrying request to /chat/completions in 0.448579 seconds
+2026-08-22 14:36:31,282 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:31,298 [INFO] Retrying request to /chat/completions in 0.854098 seconds
+2026-08-22 14:36:31,351 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:31,367 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:31,367 [INFO] Retrying request to /chat/completions in 0.417961 seconds
+2026-08-22 14:36:31,908 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:31,908 [INFO] Retrying request to /chat/completions in 0.943940 seconds
+2026-08-22 14:36:32,030 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:36:32,194 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:32,194 [WARNING] [gemini-3.5-flash-lite] retard/erreur -> attente 2.2s (essai 1/5)
+2026-08-22 14:36:32,941 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:32,941 [WARNING] [mistral-large-latest] retard/erreur -> attente 4.1s (essai 2/8)
+2026-08-22 14:36:34,074 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:34,489 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:34,489 [INFO] Retrying request to /chat/completions in 0.392317 seconds
+2026-08-22 14:36:34,943 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:34,943 [INFO] Retrying request to /chat/completions in 0.863651 seconds
+2026-08-22 14:36:35,370 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:36:35,869 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:35,877 [WARNING] [gemini-3.5-flash-lite] retard/erreur -> attente 4.1s (essai 2/5)
+2026-08-22 14:36:36,711 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:37,180 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:37,180 [INFO] Retrying request to /chat/completions in 0.404764 seconds
+2026-08-22 14:36:37,673 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:37,673 [INFO] Retrying request to /chat/completions in 0.961755 seconds
+2026-08-22 14:36:38,711 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:36:38,734 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:38,735 [WARNING] [mistral-large-latest] retard/erreur -> attente 8.2s (essai 3/8)
+2026-08-22 14:36:39,297 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:39,976 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:39,988 [INFO] Retrying request to /chat/completions in 0.490851 seconds
+2026-08-22 14:36:40,530 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:40,543 [INFO] Retrying request to /chat/completions in 0.985809 seconds
+2026-08-22 14:36:41,577 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:41,580 [WARNING] [gemini-3.5-flash-lite] retard/erreur -> attente 8.8s (essai 3/5)
+2026-08-22 14:36:42,046 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:36:42,356 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:45,108 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:45,404 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:36:47,084 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:47,084 [INFO] Retrying request to /chat/completions in 0.484554 seconds
+2026-08-22 14:36:47,658 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:47,658 [INFO] Retrying request to /chat/completions in 0.823653 seconds
+2026-08-22 14:36:47,755 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:48,572 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:36:48,572 [WARNING] [mistral-large-latest] retard/erreur -> attente 16.4s (essai 4/8)
+2026-08-22 14:36:48,752 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:36:50,579 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:51,148 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:52,085 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:36:53,404 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:53,938 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:55,422 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:36:55,913 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:56,626 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:58,562 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:36:58,562 [INFO] [openai/gpt-oss-120b] 213/1500 textes traités (0 erreurs de parsing/réponse)
+2026-08-22 14:36:58,753 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:36:59,340 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:01,770 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:02,111 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:37:02,215 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:04,349 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:04,897 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:05,444 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:37:05,712 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:07,069 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:07,617 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:08,789 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:37:09,858 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:10,326 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:10,745 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:12,120 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:37:13,017 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:13,112 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:15,470 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:37:15,740 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:15,797 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:15,811 [INFO] [gemini-3.5-flash-lite] 214/1500 textes traités (0 erreurs de parsing/réponse)
+2026-08-22 14:37:16,372 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:18,470 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:18,798 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:37:18,798 [INFO] [@cf/meta/llama-3.3-70b-instruct-fp8-fast] 221/1500 textes traités (40 erreurs de parsing/réponse)
+2026-08-22 14:37:19,065 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:20,725 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:21,176 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:21,803 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:22,137 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:37:23,946 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:24,772 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:25,232 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:25,269 [INFO] Retrying request to /chat/completions in 0.403537 seconds
+2026-08-22 14:37:25,496 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:37:25,852 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:25,852 [INFO] Retrying request to /chat/completions in 0.755069 seconds
+2026-08-22 14:37:26,700 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:26,700 [WARNING] [mistral-large-latest] retard/erreur -> attente 2.6s (essai 1/8)
+2026-08-22 14:37:26,753 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:27,847 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:28,868 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:37:29,377 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:29,377 [INFO] Retrying request to /chat/completions in 0.410772 seconds
+2026-08-22 14:37:29,462 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:29,938 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:29,938 [INFO] Retrying request to /chat/completions in 0.871742 seconds
+2026-08-22 14:37:30,732 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:30,899 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:30,899 [WARNING] [mistral-large-latest] retard/erreur -> attente 4.0s (essai 2/8)
+2026-08-22 14:37:32,187 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:32,213 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:37:33,201 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:34,454 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:34,454 [INFO] Retrying request to /chat/completions in 0.476611 seconds
+2026-08-22 14:37:34,987 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:34,993 [INFO] Retrying request to /chat/completions in 0.822137 seconds
+2026-08-22 14:37:35,007 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:35,008 [INFO] Retrying request to /chat/completions in 0.436735 seconds
+2026-08-22 14:37:35,535 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:37:35,552 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:35,552 [INFO] Retrying request to /chat/completions in 0.932671 seconds
+2026-08-22 14:37:35,862 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:35,872 [WARNING] [gemini-3.5-flash-lite] retard/erreur -> attente 2.4s (essai 1/5)
+2026-08-22 14:37:36,337 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:36,582 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:36,582 [WARNING] [mistral-large-latest] retard/erreur -> attente 8.1s (essai 3/8)
+2026-08-22 14:37:38,339 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:38,352 [INFO] Retrying request to /chat/completions in 0.413898 seconds
+2026-08-22 14:37:38,810 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:38,810 [INFO] Retrying request to /chat/completions in 0.812359 seconds
+2026-08-22 14:37:38,867 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:37:39,043 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:39,677 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:39,690 [WARNING] [gemini-3.5-flash-lite] retard/erreur -> attente 4.4s (essai 2/5)
+2026-08-22 14:37:42,074 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:42,205 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:37:44,091 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:44,104 [INFO] Retrying request to /chat/completions in 0.492778 seconds
+2026-08-22 14:37:44,638 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:44,638 [INFO] Retrying request to /chat/completions in 0.788867 seconds
+2026-08-22 14:37:44,811 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:44,827 [INFO] Retrying request to /chat/completions in 0.386787 seconds
+2026-08-22 14:37:45,200 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:45,300 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:45,300 [INFO] Retrying request to /chat/completions in 0.984106 seconds
+2026-08-22 14:37:45,495 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:45,495 [WARNING] [gemini-3.5-flash-lite] retard/erreur -> attente 8.1s (essai 3/5)
+2026-08-22 14:37:45,548 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:37:46,370 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:37:46,370 [WARNING] [mistral-large-latest] retard/erreur -> attente 16.6s (essai 4/8)
+2026-08-22 14:37:47,926 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:48,897 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:37:50,631 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:52,223 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:37:53,296 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:54,132 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:55,568 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:37:56,742 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:56,762 [INFO] [openai/gpt-oss-120b] 233/1500 textes traités (0 erreurs de parsing/réponse)
+2026-08-22 14:37:56,833 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:58,914 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:37:59,212 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:37:59,566 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:02,077 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:02,232 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:38:02,287 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:03,577 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:04,609 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:05,078 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:05,582 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:38:07,300 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:07,771 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:08,590 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:08,911 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:38:10,443 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:10,497 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:12,244 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:38:13,196 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:13,232 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:13,539 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:15,576 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:38:15,888 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:16,245 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:18,563 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:18,573 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:18,903 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:38:19,052 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:21,238 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:21,928 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:22,236 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:38:23,064 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:38:23,064 [INFO] Retrying request to /chat/completions in 0.403298 seconds
+2026-08-22 14:38:23,919 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:24,317 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:38:24,317 [INFO] Retrying request to /chat/completions in 0.953381 seconds
+2026-08-22 14:38:25,359 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:38:25,359 [WARNING] [mistral-large-latest] retard/erreur -> attente 2.8s (essai 1/8)
+2026-08-22 14:38:25,505 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:25,572 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:38:25,591 [INFO] [@cf/meta/llama-3.3-70b-instruct-fp8-fast] 241/1500 textes traités (60 erreurs de parsing/réponse)
+2026-08-22 14:38:26,588 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:28,184 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:28,281 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:38:28,281 [INFO] Retrying request to /chat/completions in 0.402734 seconds
+2026-08-22 14:38:28,780 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:38:28,796 [INFO] Retrying request to /chat/completions in 0.950577 seconds
+2026-08-22 14:38:28,914 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:38:29,282 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:29,305 [INFO] [gemini-3.5-flash-lite] 234/1500 textes traités (0 erreurs de parsing/réponse)
+2026-08-22 14:38:29,826 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:38:29,826 [WARNING] [mistral-large-latest] retard/erreur -> attente 4.3s (essai 2/8)
+2026-08-22 14:38:30,863 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:32,016 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:32,247 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:38:33,533 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:34,262 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:38:34,262 [INFO] Retrying request to /chat/completions in 0.423381 seconds
+2026-08-22 14:38:34,731 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:34,782 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:38:34,782 [INFO] Retrying request to /chat/completions in 0.805733 seconds
+2026-08-22 14:38:35,580 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:38:35,690 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:38:35,690 [WARNING] [mistral-large-latest] retard/erreur -> attente 8.3s (essai 3/8)
+2026-08-22 14:38:36,342 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:36,985 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:38:36,985 [INFO] Retrying request to /chat/completions in 0.380870 seconds
+2026-08-22 14:38:37,422 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:38:37,438 [INFO] Retrying request to /chat/completions in 0.820359 seconds
+2026-08-22 14:38:38,302 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:38:38,302 [WARNING] [gemini-3.5-flash-lite] retard/erreur -> attente 2.0s (essai 1/5)
+2026-08-22 14:38:38,941 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:38:39,492 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:40,366 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:38:40,368 [INFO] Retrying request to /chat/completions in 0.383481 seconds
+2026-08-22 14:38:40,802 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:38:40,802 [INFO] Retrying request to /chat/completions in 0.983425 seconds
+2026-08-22 14:38:41,834 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:38:41,847 [WARNING] [gemini-3.5-flash-lite] retard/erreur -> attente 4.1s (essai 2/5)
+2026-08-22 14:38:42,271 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:38:43,208 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:44,124 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:38:44,124 [INFO] Retrying request to /chat/completions in 0.489877 seconds
+2026-08-22 14:38:44,698 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:38:44,698 [INFO] Retrying request to /chat/completions in 0.871681 seconds
+2026-08-22 14:38:45,606 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:38:45,687 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:38:45,687 [WARNING] [mistral-large-latest] retard/erreur -> attente 16.6s (essai 4/8)
+2026-08-22 14:38:45,835 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:46,468 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:48,573 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:48,951 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:38:49,169 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:51,233 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:51,875 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:52,281 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:38:54,516 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:54,532 [INFO] [openai/gpt-oss-120b] 253/1500 textes traités (0 erreurs de parsing/réponse)
+2026-08-22 14:38:54,578 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:55,614 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:38:57,202 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:57,268 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:58,973 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:38:59,834 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:38:59,990 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:02,312 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:39:02,320 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:02,702 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:03,479 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:05,280 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:05,379 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:05,654 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:39:07,918 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:08,076 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:08,519 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:09,012 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:39:10,424 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:10,767 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:12,346 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:39:13,282 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:13,472 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:13,759 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:15,696 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:39:16,162 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:16,392 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:18,764 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:18,768 [INFO] [mistral-large-latest] 141/1500 textes traités (0 erreurs de parsing/réponse)
+2026-08-22 14:39:18,877 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:19,039 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:39:19,419 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:21,592 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:22,093 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:22,403 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:39:23,262 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:23,263 [INFO] Retrying request to /chat/completions in 0.415287 seconds
+2026-08-22 14:39:23,768 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:23,768 [INFO] Retrying request to /chat/completions in 0.784088 seconds
+2026-08-22 14:39:24,424 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:24,671 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:24,671 [WARNING] [mistral-large-latest] retard/erreur -> attente 2.1s (essai 1/8)
+2026-08-22 14:39:25,191 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:25,750 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:39:26,846 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:26,846 [INFO] Retrying request to /chat/completions in 0.378881 seconds
+2026-08-22 14:39:27,160 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:27,317 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:27,317 [INFO] Retrying request to /chat/completions in 0.936782 seconds
+2026-08-22 14:39:27,925 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:28,379 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:28,379 [WARNING] [mistral-large-latest] retard/erreur -> attente 5.0s (essai 2/8)
+2026-08-22 14:39:29,093 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:39:29,410 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:29,425 [INFO] Retrying request to /chat/completions in 0.391602 seconds
+2026-08-22 14:39:29,846 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:29,862 [INFO] Retrying request to /chat/completions in 0.954864 seconds
+2026-08-22 14:39:30,868 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:30,874 [WARNING] [gemini-3.5-flash-lite] retard/erreur -> attente 2.4s (essai 1/5)
+2026-08-22 14:39:30,943 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:32,417 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:39:32,433 [INFO] [@cf/meta/llama-3.3-70b-instruct-fp8-fast] 261/1500 textes traités (80 erreurs de parsing/réponse)
+2026-08-22 14:39:33,292 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:33,302 [INFO] Retrying request to /chat/completions in 0.400710 seconds
+2026-08-22 14:39:33,464 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:33,464 [INFO] Retrying request to /chat/completions in 0.436644 seconds
+2026-08-22 14:39:33,760 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:33,760 [INFO] Retrying request to /chat/completions in 0.846418 seconds
+2026-08-22 14:39:33,763 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:34,042 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:34,042 [INFO] Retrying request to /chat/completions in 0.885867 seconds
+2026-08-22 14:39:34,649 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:34,664 [WARNING] [gemini-3.5-flash-lite] retard/erreur -> attente 4.6s (essai 2/5)
+2026-08-22 14:39:35,017 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:35,017 [WARNING] [mistral-large-latest] retard/erreur -> attente 8.1s (essai 3/8)
+2026-08-22 14:39:35,759 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:39:36,434 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:39,127 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:39:39,271 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:39,275 [INFO] Retrying request to /chat/completions in 0.443856 seconds
+2026-08-22 14:39:39,295 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:39,763 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:39,764 [INFO] Retrying request to /chat/completions in 0.912871 seconds
+2026-08-22 14:39:40,720 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:40,720 [WARNING] [gemini-3.5-flash-lite] retard/erreur -> attente 8.8s (essai 3/5)
+2026-08-22 14:39:42,460 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:39:42,673 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:43,315 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:43,315 [INFO] Retrying request to /chat/completions in 0.453422 seconds
+2026-08-22 14:39:43,850 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:43,850 [INFO] Retrying request to /chat/completions in 0.758531 seconds
+2026-08-22 14:39:44,698 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:39:44,700 [WARNING] [mistral-large-latest] retard/erreur -> attente 16.9s (essai 4/8)
+2026-08-22 14:39:45,699 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:45,833 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:39:48,310 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:49,184 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:39:50,045 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:51,260 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:51,285 [INFO] [openai/gpt-oss-120b] 273/1500 textes traités (0 erreurs de parsing/réponse)
+2026-08-22 14:39:52,513 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:39:52,791 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:52,810 [INFO] [gemini-3.5-flash-lite] 254/1500 textes traités (0 erreurs de parsing/réponse)
+2026-08-22 14:39:53,867 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:55,478 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:55,875 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:39:56,500 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:58,190 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:59,191 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:39:59,282 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:40:00,893 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:02,208 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:02,464 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:02,620 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:40:03,636 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:05,309 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:05,979 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:40:06,398 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:07,232 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:08,525 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:09,137 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:09,333 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:40:11,414 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:11,859 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:12,264 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:12,698 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:40:14,310 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:14,651 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:16,051 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:40:17,113 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:17,374 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:17,480 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:19,511 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:40:19,741 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:20,048 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:21,986 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:21,986 [INFO] Retrying request to /chat/completions in 0.396328 seconds
+2026-08-22 14:40:22,386 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:22,468 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:22,468 [INFO] Retrying request to /chat/completions in 0.968436 seconds
+2026-08-22 14:40:22,774 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:22,915 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:40:23,527 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:23,527 [WARNING] [mistral-large-latest] retard/erreur -> attente 2.8s (essai 1/8)
+2026-08-22 14:40:25,510 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:25,577 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:26,265 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:40:26,389 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:26,389 [INFO] Retrying request to /chat/completions in 0.416040 seconds
+2026-08-22 14:40:26,890 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:26,890 [INFO] Retrying request to /chat/completions in 0.839813 seconds
+2026-08-22 14:40:27,812 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:27,812 [WARNING] [mistral-large-latest] retard/erreur -> attente 4.2s (essai 2/8)
+2026-08-22 14:40:28,201 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:28,238 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:29,599 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:40:30,908 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:31,122 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:32,130 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:32,130 [INFO] Retrying request to /chat/completions in 0.449488 seconds
+2026-08-22 14:40:32,653 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:32,653 [INFO] Retrying request to /chat/completions in 0.885726 seconds
+2026-08-22 14:40:33,018 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:40:33,184 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:33,184 [INFO] Retrying request to /chat/completions in 0.380437 seconds
+2026-08-22 14:40:33,632 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:33,632 [WARNING] [mistral-large-latest] retard/erreur -> attente 9.0s (essai 3/8)
+2026-08-22 14:40:33,632 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:33,632 [INFO] Retrying request to /chat/completions in 0.828168 seconds
+2026-08-22 14:40:33,865 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:34,520 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:34,529 [WARNING] [gemini-3.5-flash-lite] retard/erreur -> attente 2.1s (essai 1/5)
+2026-08-22 14:40:36,370 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:40:36,663 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:36,708 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:36,708 [INFO] Retrying request to /chat/completions in 0.483158 seconds
+2026-08-22 14:40:37,243 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:37,243 [INFO] Retrying request to /chat/completions in 0.889376 seconds
+2026-08-22 14:40:38,203 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:38,204 [WARNING] [gemini-3.5-flash-lite] retard/erreur -> attente 4.7s (essai 2/5)
+2026-08-22 14:40:39,717 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:40:39,721 [INFO] [@cf/meta/llama-3.3-70b-instruct-fp8-fast] 281/1500 textes traités (100 erreurs de parsing/réponse)
+2026-08-22 14:40:39,885 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:42,762 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:42,764 [INFO] Retrying request to /chat/completions in 0.375185 seconds
+2026-08-22 14:40:42,967 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:42,968 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:42,969 [INFO] Retrying request to /chat/completions in 0.475980 seconds
+2026-08-22 14:40:43,077 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:40:43,314 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:43,314 [INFO] Retrying request to /chat/completions in 0.990175 seconds
+2026-08-22 14:40:43,501 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:43,503 [INFO] Retrying request to /chat/completions in 0.989600 seconds
+2026-08-22 14:40:44,391 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:44,391 [WARNING] [mistral-large-latest] retard/erreur -> attente 17.0s (essai 4/8)
+2026-08-22 14:40:44,532 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:40:44,537 [ERROR] [gemini-3.5-flash-lite] erreur FATALE (credentials/quota) -> arrêt immédiat : Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 15.401234686s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '15s'}]}}]
+2026-08-22 14:40:44,541 [ERROR] [gemini-3.5-flash-lite] run interrompu, clé/quota probablement invalide. Voir etat_run.json.
+2026-08-22 14:40:45,640 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:46,430 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:40:49,305 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:49,308 [INFO] [openai/gpt-oss-120b] 293/1500 textes traités (0 erreurs de parsing/réponse)
+2026-08-22 14:40:49,794 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:40:51,800 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:53,141 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:40:54,318 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:56,488 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:40:56,760 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:59,501 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:40:59,875 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:41:02,216 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:02,257 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:03,242 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:41:05,359 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:06,594 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:41:07,229 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:08,160 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:09,985 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:41:10,906 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:12,357 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:13,365 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:41:13,506 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:16,032 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:16,717 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:41:17,533 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:19,124 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:20,113 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:41:21,795 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:22,044 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:41:22,044 [INFO] Retrying request to /chat/completions in 0.383562 seconds
+2026-08-22 14:41:22,567 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:41:22,569 [INFO] Retrying request to /chat/completions in 0.884414 seconds
+2026-08-22 14:41:23,511 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:41:23,616 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:41:23,620 [WARNING] [mistral-large-latest] retard/erreur -> attente 2.4s (essai 1/8)
+2026-08-22 14:41:24,892 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:26,203 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:41:26,203 [INFO] Retrying request to /chat/completions in 0.446349 seconds
+2026-08-22 14:41:26,788 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:41:26,790 [INFO] Retrying request to /chat/completions in 0.786490 seconds
+2026-08-22 14:41:26,892 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:41:27,647 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:27,706 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:41:27,708 [WARNING] [mistral-large-latest] retard/erreur -> attente 4.2s (essai 2/8)
+2026-08-22 14:41:30,267 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:41:30,522 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:32,009 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:41:32,009 [INFO] Retrying request to /chat/completions in 0.410591 seconds
+2026-08-22 14:41:32,532 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:41:32,554 [INFO] Retrying request to /chat/completions in 0.773961 seconds
+2026-08-22 14:41:33,440 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:41:33,440 [WARNING] [mistral-large-latest] retard/erreur -> attente 8.3s (essai 3/8)
+2026-08-22 14:41:33,611 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:41:33,620 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:36,382 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:36,990 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:41:39,439 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:40,354 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:41:41,877 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:41:41,877 [INFO] Retrying request to /chat/completions in 0.406049 seconds
+2026-08-22 14:41:42,167 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:42,377 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:41:42,377 [INFO] Retrying request to /chat/completions in 0.924277 seconds
+2026-08-22 14:41:43,394 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:41:43,396 [WARNING] [mistral-large-latest] retard/erreur -> attente 16.8s (essai 4/8)
+2026-08-22 14:41:43,717 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:41:44,951 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:44,956 [INFO] [openai/gpt-oss-120b] 313/1500 textes traités (0 erreurs de parsing/réponse)
+2026-08-22 14:41:47,072 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:41:47,140 [INFO] [@cf/meta/llama-3.3-70b-instruct-fp8-fast] 301/1500 textes traités (120 erreurs de parsing/réponse)
+2026-08-22 14:41:48,712 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:50,478 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:41:51,233 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:53,812 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:41:54,101 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:41:57,194 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:41:57,385 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:00,315 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:00,526 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:42:00,838 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:03,504 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:03,889 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:42:05,947 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:06,547 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:07,243 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:42:09,637 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:10,603 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:42:10,952 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:12,566 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:14,010 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:42:15,491 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:17,066 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:17,403 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:42:18,447 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:20,791 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:42:21,588 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:42:21,588 [INFO] Retrying request to /chat/completions in 0.443750 seconds
+2026-08-22 14:42:21,613 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:22,132 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:42:22,134 [INFO] Retrying request to /chat/completions in 0.890152 seconds
+2026-08-22 14:42:23,132 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:42:23,133 [WARNING] [mistral-large-latest] retard/erreur -> attente 2.8s (essai 1/8)
+2026-08-22 14:42:24,136 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:42:24,399 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:26,068 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:42:26,070 [INFO] Retrying request to /chat/completions in 0.415799 seconds
+2026-08-22 14:42:26,584 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:42:26,584 [INFO] Retrying request to /chat/completions in 0.930109 seconds
+2026-08-22 14:42:27,508 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:42:27,605 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:42:27,633 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:27,649 [WARNING] [mistral-large-latest] retard/erreur -> attente 4.5s (essai 2/8)
+2026-08-22 14:42:30,634 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:30,885 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:42:32,305 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:42:32,307 [INFO] Retrying request to /chat/completions in 0.378860 seconds
+2026-08-22 14:42:32,783 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:42:32,785 [INFO] Retrying request to /chat/completions in 0.946071 seconds
+2026-08-22 14:42:33,546 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:33,842 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:42:33,844 [WARNING] [mistral-large-latest] retard/erreur -> attente 8.2s (essai 3/8)
+2026-08-22 14:42:34,263 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:42:36,083 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:37,628 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:42:39,066 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:40,993 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:42:42,204 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:42:42,207 [INFO] Retrying request to /chat/completions in 0.484135 seconds
+2026-08-22 14:42:42,243 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:42,772 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:42:42,772 [INFO] Retrying request to /chat/completions in 0.850982 seconds
+2026-08-22 14:42:43,718 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:42:43,720 [WARNING] [mistral-large-latest] retard/erreur -> attente 16.2s (essai 4/8)
+2026-08-22 14:42:44,339 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:42:45,185 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:42:45,216 [ERROR] [openai/gpt-oss-120b] run interrompu par une exception inattendue : [WinError 5] Accès refusé: 'C:\\MIAGE\\MIAGE\\Mémoire\\M2\\nouveau sujet\\code\\memoire-rxa-benchmark\\tmpy1_mhnzq' -> 'etat_run.json'
+2026-08-22 14:42:45,220 [ERROR] [openai/gpt-oss-120b] ECHEC INATTENDU -> [WinError 5] Accès refusé: 'C:\\MIAGE\\MIAGE\\Mémoire\\M2\\nouveau sujet\\code\\memoire-rxa-benchmark\\tmpy1_mhnzq' -> 'etat_run.json'
+2026-08-22 14:42:47,698 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:42:51,063 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:42:54,406 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:42:54,432 [INFO] [@cf/meta/llama-3.3-70b-instruct-fp8-fast] 321/1500 textes traités (140 erreurs de parsing/réponse)
+2026-08-22 14:42:57,765 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:43:00,547 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:43:01,105 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:43:04,471 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:43:05,620 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:43:07,849 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:43:10,978 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:43:11,220 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:43:14,598 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:43:16,087 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:43:17,964 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:43:20,643 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:43:20,645 [INFO] Retrying request to /chat/completions in 0.416611 seconds
+2026-08-22 14:43:21,167 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:43:21,169 [INFO] Retrying request to /chat/completions in 0.991366 seconds
+2026-08-22 14:43:21,333 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:43:22,282 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:43:22,287 [WARNING] [mistral-large-latest] retard/erreur -> attente 2.4s (essai 1/8)
+2026-08-22 14:43:24,692 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:43:24,850 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:43:24,851 [INFO] Retrying request to /chat/completions in 0.443310 seconds
+2026-08-22 14:43:25,412 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:43:25,412 [INFO] Retrying request to /chat/completions in 0.812651 seconds
+2026-08-22 14:43:26,320 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:43:26,320 [WARNING] [mistral-large-latest] retard/erreur -> attente 4.7s (essai 2/8)
+2026-08-22 14:43:28,080 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:43:31,193 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:43:31,193 [INFO] Retrying request to /chat/completions in 0.465963 seconds
+2026-08-22 14:43:31,419 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:43:31,765 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:43:31,765 [INFO] Retrying request to /chat/completions in 0.891557 seconds
+2026-08-22 14:43:32,739 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:43:32,741 [WARNING] [mistral-large-latest] retard/erreur -> attente 8.5s (essai 3/8)
+2026-08-22 14:43:34,770 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:43:38,126 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:43:41,339 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:43:41,341 [INFO] Retrying request to /chat/completions in 0.438134 seconds
+2026-08-22 14:43:41,464 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:43:41,928 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:43:41,928 [INFO] Retrying request to /chat/completions in 0.945548 seconds
+2026-08-22 14:43:42,959 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:43:42,959 [WARNING] [mistral-large-latest] retard/erreur -> attente 16.3s (essai 4/8)
+2026-08-22 14:43:44,796 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:43:48,146 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:43:51,476 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:43:54,801 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:43:58,143 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:43:59,457 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:43:59,457 [INFO] Retrying request to /chat/completions in 0.388651 seconds
+2026-08-22 14:43:59,932 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:43:59,932 [INFO] Retrying request to /chat/completions in 0.798061 seconds
+2026-08-22 14:44:01,256 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:44:01,483 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:44:01,498 [INFO] [@cf/meta/llama-3.3-70b-instruct-fp8-fast] 341/1500 textes traités (160 erreurs de parsing/réponse)
+2026-08-22 14:44:04,830 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:44:06,301 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:44:08,172 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:44:11,501 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:44:11,596 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:44:14,853 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:44:16,601 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:44:16,604 [INFO] [mistral-large-latest] 161/1500 textes traités (0 erreurs de parsing/réponse)
+2026-08-22 14:44:18,192 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:44:21,147 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:44:21,147 [INFO] Retrying request to /chat/completions in 0.392436 seconds
+2026-08-22 14:44:21,537 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:44:21,638 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:44:21,638 [INFO] Retrying request to /chat/completions in 0.955945 seconds
+2026-08-22 14:44:22,679 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:44:22,679 [WARNING] [mistral-large-latest] retard/erreur -> attente 2.6s (essai 1/8)
+2026-08-22 14:44:24,875 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:44:25,374 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:44:25,374 [INFO] Retrying request to /chat/completions in 0.490992 seconds
+2026-08-22 14:44:25,962 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:44:25,962 [INFO] Retrying request to /chat/completions in 0.858816 seconds
+2026-08-22 14:44:26,938 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:44:26,938 [WARNING] [mistral-large-latest] retard/erreur -> attente 4.1s (essai 2/8)
+2026-08-22 14:44:28,209 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:44:31,184 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:44:31,184 [INFO] Retrying request to /chat/completions in 0.455283 seconds
+2026-08-22 14:44:31,543 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:44:31,724 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:44:31,728 [INFO] Retrying request to /chat/completions in 0.809442 seconds
+2026-08-22 14:44:32,620 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:44:32,620 [WARNING] [mistral-large-latest] retard/erreur -> attente 8.9s (essai 3/8)
+2026-08-22 14:44:34,881 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:44:38,236 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:44:41,561 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:44:41,680 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:44:41,680 [INFO] Retrying request to /chat/completions in 0.423396 seconds
+2026-08-22 14:44:42,206 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:44:42,208 [INFO] Retrying request to /chat/completions in 0.892915 seconds
+2026-08-22 14:44:43,193 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:44:43,193 [WARNING] [mistral-large-latest] retard/erreur -> attente 16.6s (essai 4/8)
+2026-08-22 14:44:44,898 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:44:48,239 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:44:51,584 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:44:54,925 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:44:58,277 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:45:00,589 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:45:01,612 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:45:04,947 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:45:05,577 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:45:08,291 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:45:08,308 [INFO] [@cf/meta/llama-3.3-70b-instruct-fp8-fast] 361/1500 textes traités (180 erreurs de parsing/réponse)
+2026-08-22 14:45:10,622 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:45:11,643 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:45:14,977 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:45:15,592 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:45:18,332 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:45:20,118 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:45:20,118 [INFO] Retrying request to /chat/completions in 0.458504 seconds
+2026-08-22 14:45:20,683 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:45:20,683 [INFO] Retrying request to /chat/completions in 0.776848 seconds
+2026-08-22 14:45:21,555 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:45:21,557 [WARNING] [mistral-large-latest] retard/erreur -> attente 2.2s (essai 1/8)
+2026-08-22 14:45:21,667 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:45:23,830 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:45:23,830 [INFO] Retrying request to /chat/completions in 0.442452 seconds
+2026-08-22 14:45:24,359 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:45:24,359 [INFO] Retrying request to /chat/completions in 0.773512 seconds
+2026-08-22 14:45:24,998 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:45:25,225 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:45:25,225 [WARNING] [mistral-large-latest] retard/erreur -> attente 4.8s (essai 2/8)
+2026-08-22 14:45:28,351 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:45:30,151 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:45:30,151 [INFO] Retrying request to /chat/completions in 0.479247 seconds
+2026-08-22 14:45:30,713 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:45:30,713 [INFO] Retrying request to /chat/completions in 0.820308 seconds
+2026-08-22 14:45:31,634 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:45:31,634 [WARNING] [mistral-large-latest] retard/erreur -> attente 8.8s (essai 3/8)
+2026-08-22 14:45:31,689 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:45:35,015 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:45:38,374 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:45:40,580 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:45:40,580 [INFO] Retrying request to /chat/completions in 0.416442 seconds
+2026-08-22 14:45:41,102 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:45:41,103 [INFO] Retrying request to /chat/completions in 0.986487 seconds
+2026-08-22 14:45:41,732 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:45:42,176 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:45:42,176 [WARNING] [mistral-large-latest] retard/erreur -> attente 16.9s (essai 4/8)
+2026-08-22 14:45:45,054 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:45:48,408 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:45:51,731 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:45:55,064 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:45:58,416 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:45:59,255 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:45:59,255 [INFO] Retrying request to /chat/completions in 0.454541 seconds
+2026-08-22 14:45:59,806 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:45:59,808 [INFO] Retrying request to /chat/completions in 0.817717 seconds
+2026-08-22 14:46:01,330 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:46:01,742 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:46:05,090 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:46:06,609 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:46:08,451 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:46:11,686 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:46:11,843 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:46:15,179 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:46:15,238 [INFO] [@cf/meta/llama-3.3-70b-instruct-fp8-fast] 381/1500 textes traités (200 erreurs de parsing/réponse)
+2026-08-22 14:46:16,731 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:46:18,592 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:46:21,215 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:46:21,215 [INFO] Retrying request to /chat/completions in 0.468770 seconds
+2026-08-22 14:46:21,788 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:46:21,788 [INFO] Retrying request to /chat/completions in 0.974518 seconds
+2026-08-22 14:46:21,947 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:46:22,852 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:46:22,852 [WARNING] [mistral-large-latest] retard/erreur -> attente 2.1s (essai 1/8)
+2026-08-22 14:46:25,045 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:46:25,045 [INFO] Retrying request to /chat/completions in 0.423457 seconds
+2026-08-22 14:46:25,277 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:46:25,561 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:46:25,561 [INFO] Retrying request to /chat/completions in 0.811768 seconds
+2026-08-22 14:46:26,478 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:46:26,478 [WARNING] [mistral-large-latest] retard/erreur -> attente 4.1s (essai 2/8)
+2026-08-22 14:46:28,630 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:46:30,678 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:46:30,678 [INFO] Retrying request to /chat/completions in 0.407963 seconds
+2026-08-22 14:46:31,179 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:46:31,179 [INFO] Retrying request to /chat/completions in 0.858611 seconds
+2026-08-22 14:46:31,975 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:46:32,138 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:46:32,138 [WARNING] [mistral-large-latest] retard/erreur -> attente 8.8s (essai 3/8)
+2026-08-22 14:46:35,825 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:46:39,176 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:46:41,101 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:46:41,101 [INFO] Retrying request to /chat/completions in 0.380759 seconds
+2026-08-22 14:46:41,814 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:46:41,817 [INFO] Retrying request to /chat/completions in 0.858200 seconds
+2026-08-22 14:46:42,514 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:46:42,801 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:46:42,803 [WARNING] [mistral-large-latest] retard/erreur -> attente 16.1s (essai 4/8)
+2026-08-22 14:46:45,844 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:46:49,228 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:46:52,567 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:46:55,889 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:46:59,084 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:46:59,086 [INFO] Retrying request to /chat/completions in 0.465649 seconds
+2026-08-22 14:46:59,236 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:46:59,642 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 14:46:59,642 [INFO] Retrying request to /chat/completions in 0.959978 seconds
+2026-08-22 14:47:01,202 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:47:02,553 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:47:05,898 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:47:06,308 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:47:09,276 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:47:11,476 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:47:12,627 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:47:15,966 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:47:16,450 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 14:47:16,480 [ERROR] [mistral-large-latest] run interrompu par une exception inattendue : [WinError 5] Accès refusé: 'C:\\MIAGE\\MIAGE\\Mémoire\\M2\\nouveau sujet\\code\\memoire-rxa-benchmark\\tmpr785c556' -> 'etat_run.json'
+2026-08-22 14:47:16,481 [ERROR] [mistral-large-latest] ECHEC INATTENDU -> [WinError 5] Accès refusé: 'C:\\MIAGE\\MIAGE\\Mémoire\\M2\\nouveau sujet\\code\\memoire-rxa-benchmark\\tmpr785c556' -> 'etat_run.json'
+2026-08-22 14:47:19,327 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:47:22,683 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:47:22,686 [INFO] [@cf/meta/llama-3.3-70b-instruct-fp8-fast] 401/1500 textes traités (220 erreurs de parsing/réponse)
+2026-08-22 14:47:26,013 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:47:29,359 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:47:32,695 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:47:36,100 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:47:39,449 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:47:42,833 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:47:46,178 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:47:49,518 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:47:52,852 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:47:56,187 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:47:59,533 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:48:02,871 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:48:06,195 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:48:09,546 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:48:12,880 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:48:16,215 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:48:19,594 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:48:22,927 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:48:26,279 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:48:29,627 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:48:29,630 [INFO] [@cf/meta/llama-3.3-70b-instruct-fp8-fast] 421/1500 textes traités (240 erreurs de parsing/réponse)
+2026-08-22 14:48:32,951 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:48:36,318 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:48:39,662 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:48:43,006 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:48:46,336 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:48:49,676 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-22 14:48:53,008 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/%7BCLOUDFLARE_ACCOUNT_ID%7D/ai/v1/chat/completions "HTTP/1.1 404 Not Found"

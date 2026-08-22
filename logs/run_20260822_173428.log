@@ -1,0 +1,302 @@
+2026-08-22 17:34:28,986 [INFO] Lancement en parallèle de 4 modèles... (log : logs\run_20260822_173428.log)
+2026-08-22 17:34:29,139 [INFO] [gemini-3.5-flash-lite] 609 textes déjà traités, reprise.
+2026-08-22 17:34:29,144 [INFO] [mistral-large-latest] 288 textes déjà traités, reprise.
+2026-08-22 17:34:29,147 [INFO] [@cf/meta/llama-3.3-70b-instruct-fp8-fast] 494 textes déjà traités, reprise.
+2026-08-22 17:34:29,152 [INFO] [openai/gpt-oss-120b] 643 textes déjà traités, reprise.
+2026-08-22 17:34:30,526 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:34:30,536 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:34:30,895 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:34:31,070 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:34:34,766 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:34:35,567 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:34:35,671 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:34:37,759 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:34:37,759 [WARNING] [openai/gpt-oss-120b] retard/erreur -> attente 2.3s (essai 1/5)
+2026-08-22 17:34:39,634 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:34:40,566 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:34:40,651 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:34:40,829 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:34:43,645 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:34:45,591 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:34:45,615 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:34:47,481 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:34:47,536 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:34:47,537 [WARNING] [openai/gpt-oss-120b] retard/erreur -> attente 2.7s (essai 1/5)
+2026-08-22 17:34:50,136 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:34:50,136 [INFO] Retrying request to /chat/completions in 0.427544 seconds
+2026-08-22 17:34:50,305 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:34:50,305 [WARNING] [openai/gpt-oss-120b] retard/erreur -> attente 4.2s (essai 2/5)
+2026-08-22 17:34:50,600 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:34:50,696 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:34:50,697 [INFO] Retrying request to /chat/completions in 0.781848 seconds
+2026-08-22 17:34:51,180 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:34:51,564 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:34:51,565 [WARNING] [mistral-large-latest] retard/erreur -> attente 2.4s (essai 1/8)
+2026-08-22 17:34:54,039 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:34:54,040 [INFO] Retrying request to /chat/completions in 0.386125 seconds
+2026-08-22 17:34:54,514 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:34:54,515 [WARNING] [openai/gpt-oss-120b] retard/erreur -> attente 8.7s (essai 3/5)
+2026-08-22 17:34:54,516 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:34:54,516 [INFO] Retrying request to /chat/completions in 0.763843 seconds
+2026-08-22 17:34:55,379 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:34:55,379 [WARNING] [mistral-large-latest] retard/erreur -> attente 4.6s (essai 2/8)
+2026-08-22 17:34:55,573 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:34:55,581 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:34:59,441 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:00,542 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:00,738 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:03,300 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:35:03,302 [WARNING] [openai/gpt-oss-120b] retard/erreur -> attente 17.0s (essai 4/5)
+2026-08-22 17:35:03,806 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:05,472 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:05,875 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:07,647 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:10,523 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:11,121 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:11,585 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:15,477 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:15,583 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:16,156 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:19,577 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:20,332 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:35:20,518 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:20,701 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:35:20,701 [INFO] Retrying request to /chat/completions in 0.439069 seconds
+2026-08-22 17:35:21,245 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:35:21,247 [INFO] Retrying request to /chat/completions in 0.915333 seconds
+2026-08-22 17:35:22,249 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:35:22,250 [WARNING] [mistral-large-latest] retard/erreur -> attente 2.5s (essai 1/8)
+2026-08-22 17:35:23,473 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:24,992 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:35:24,992 [INFO] Retrying request to /chat/completions in 0.485795 seconds
+2026-08-22 17:35:25,549 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:25,571 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:35:25,571 [INFO] Retrying request to /chat/completions in 0.777541 seconds
+2026-08-22 17:35:26,429 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:35:26,430 [WARNING] [mistral-large-latest] retard/erreur -> attente 4.5s (essai 2/8)
+2026-08-22 17:35:27,026 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:35:27,027 [WARNING] [openai/gpt-oss-120b] retard/erreur -> attente 2.7s (essai 1/5)
+2026-08-22 17:35:27,482 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:29,723 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:35:29,723 [WARNING] [openai/gpt-oss-120b] retard/erreur -> attente 4.8s (essai 2/5)
+2026-08-22 17:35:30,559 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:31,032 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:35:31,033 [INFO] Retrying request to /chat/completions in 0.391005 seconds
+2026-08-22 17:35:31,517 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:35:31,528 [INFO] Retrying request to /chat/completions in 0.920412 seconds
+2026-08-22 17:35:31,540 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:32,608 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:35:32,608 [WARNING] [mistral-large-latest] retard/erreur -> attente 8.3s (essai 3/8)
+2026-08-22 17:35:34,618 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:35:34,619 [INFO] Retrying request to /chat/completions in 26.000000 seconds
+2026-08-22 17:35:35,517 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:35,567 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:39,344 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:40,518 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:40,987 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:35:40,987 [INFO] Retrying request to /chat/completions in 0.451149 seconds
+2026-08-22 17:35:41,575 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:35:41,575 [INFO] Retrying request to /chat/completions in 0.755839 seconds
+2026-08-22 17:35:42,453 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:35:42,454 [WARNING] [mistral-large-latest] retard/erreur -> attente 17.0s (essai 4/8)
+2026-08-22 17:35:43,161 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:45,493 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:47,206 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:47,210 [INFO] [@cf/meta/llama-3.3-70b-instruct-fp8-fast] 514/1500 textes traités (0 erreurs de parsing/réponse)
+2026-08-22 17:35:50,462 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:51,215 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:55,400 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:55,436 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:35:59,434 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:00,068 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:00,383 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:02,354 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:03,299 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:05,060 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:05,383 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:05,397 [INFO] [gemini-3.5-flash-lite] 629/1500 textes traités (0 erreurs de parsing/réponse)
+2026-08-22 17:36:07,225 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:09,016 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:36:09,017 [WARNING] [openai/gpt-oss-120b] retard/erreur -> attente 3.0s (essai 1/5)
+2026-08-22 17:36:10,104 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:10,310 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:11,123 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:12,050 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:36:12,051 [WARNING] [openai/gpt-oss-120b] retard/erreur -> attente 4.4s (essai 2/5)
+2026-08-22 17:36:15,266 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:15,406 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:15,755 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:16,481 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:36:16,482 [WARNING] [openai/gpt-oss-120b] retard/erreur -> attente 8.7s (essai 3/5)
+2026-08-22 17:36:19,499 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:20,239 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:20,256 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:36:20,257 [INFO] Retrying request to /chat/completions in 0.443594 seconds
+2026-08-22 17:36:20,791 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:36:20,791 [INFO] Retrying request to /chat/completions in 0.960076 seconds
+2026-08-22 17:36:21,853 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:36:21,853 [WARNING] [mistral-large-latest] retard/erreur -> attente 2.2s (essai 1/8)
+2026-08-22 17:36:23,580 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:24,096 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:36:24,096 [INFO] Retrying request to /chat/completions in 0.489003 seconds
+2026-08-22 17:36:24,686 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:36:24,688 [INFO] Retrying request to /chat/completions in 0.975904 seconds
+2026-08-22 17:36:25,213 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:25,327 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:36:25,327 [WARNING] [openai/gpt-oss-120b] retard/erreur -> attente 16.1s (essai 4/5)
+2026-08-22 17:36:25,774 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:36:25,775 [WARNING] [mistral-large-latest] retard/erreur -> attente 4.6s (essai 2/8)
+2026-08-22 17:36:27,678 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:30,128 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:30,417 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:36:30,417 [INFO] Retrying request to /chat/completions in 0.394886 seconds
+2026-08-22 17:36:30,900 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:36:30,901 [INFO] Retrying request to /chat/completions in 0.970641 seconds
+2026-08-22 17:36:31,518 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:31,971 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:36:31,972 [WARNING] [mistral-large-latest] retard/erreur -> attente 8.8s (essai 3/8)
+2026-08-22 17:36:35,117 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:35,406 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:39,266 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:40,265 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:40,967 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:36:40,968 [INFO] Retrying request to /chat/completions in 0.477628 seconds
+2026-08-22 17:36:41,498 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:36:41,498 [INFO] Retrying request to /chat/completions in 59.000000 seconds
+2026-08-22 17:36:41,546 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:36:41,546 [INFO] Retrying request to /chat/completions in 0.999866 seconds
+2026-08-22 17:36:42,650 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:36:42,651 [WARNING] [mistral-large-latest] retard/erreur -> attente 16.8s (essai 4/8)
+2026-08-22 17:36:43,206 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:45,229 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:47,336 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:50,184 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:51,295 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:55,159 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:55,178 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:36:58,848 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:00,064 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:00,363 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:02,861 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:05,013 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:05,297 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:07,009 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:07,009 [INFO] [@cf/meta/llama-3.3-70b-instruct-fp8-fast] 534/1500 textes traités (0 erreurs de parsing/réponse)
+2026-08-22 17:37:09,942 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:10,292 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:10,816 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:14,767 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:14,866 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:15,266 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:18,776 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:19,781 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:37:19,781 [INFO] Retrying request to /chat/completions in 0.433497 seconds
+2026-08-22 17:37:19,800 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:20,306 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:37:20,306 [INFO] Retrying request to /chat/completions in 0.926406 seconds
+2026-08-22 17:37:21,333 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:37:21,333 [WARNING] [mistral-large-latest] retard/erreur -> attente 2.3s (essai 1/8)
+2026-08-22 17:37:22,700 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:23,722 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:37:23,722 [INFO] Retrying request to /chat/completions in 0.400038 seconds
+2026-08-22 17:37:24,212 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:37:24,212 [INFO] Retrying request to /chat/completions in 0.892639 seconds
+2026-08-22 17:37:24,740 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:25,228 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:37:25,229 [WARNING] [mistral-large-latest] retard/erreur -> attente 4.1s (essai 2/8)
+2026-08-22 17:37:26,675 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:29,387 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:37:29,387 [INFO] Retrying request to /chat/completions in 0.453873 seconds
+2026-08-22 17:37:29,671 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:29,938 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:37:29,938 [INFO] Retrying request to /chat/completions in 0.970766 seconds
+2026-08-22 17:37:30,808 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:31,085 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:37:31,085 [WARNING] [mistral-large-latest] retard/erreur -> attente 8.0s (essai 3/8)
+2026-08-22 17:37:34,621 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:34,733 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:38,598 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:39,225 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:37:39,226 [INFO] Retrying request to /chat/completions in 0.411335 seconds
+2026-08-22 17:37:39,613 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:39,733 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:37:39,734 [INFO] Retrying request to /chat/completions in 0.783425 seconds
+2026-08-22 17:37:40,554 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:37:40,606 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:37:40,607 [WARNING] [mistral-large-latest] retard/erreur -> attente 16.9s (essai 4/8)
+2026-08-22 17:37:42,525 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:44,579 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:44,595 [INFO] [gemini-3.5-flash-lite] 649/1500 textes traités (0 erreurs de parsing/réponse)
+2026-08-22 17:37:46,566 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:47,231 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:37:47,231 [WARNING] [openai/gpt-oss-120b] retard/erreur -> attente 2.4s (essai 1/5)
+2026-08-22 17:37:49,571 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:49,670 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:37:49,670 [WARNING] [openai/gpt-oss-120b] retard/erreur -> attente 4.7s (essai 2/5)
+2026-08-22 17:37:50,413 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:54,402 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:37:54,402 [WARNING] [openai/gpt-oss-120b] retard/erreur -> attente 8.8s (essai 3/5)
+2026-08-22 17:37:54,681 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:55,087 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:57,695 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:37:57,696 [INFO] Retrying request to /chat/completions in 0.487063 seconds
+2026-08-22 17:37:58,276 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:37:58,276 [INFO] Retrying request to /chat/completions in 0.877322 seconds
+2026-08-22 17:37:59,172 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:59,699 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:37:59,715 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:03,131 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:03,799 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:04,673 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:04,736 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:07,046 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:09,588 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:09,732 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:10,469 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:38:10,469 [WARNING] [openai/gpt-oss-120b] retard/erreur -> attente 2.2s (essai 1/5)
+2026-08-22 17:38:11,070 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:12,756 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:38:12,756 [WARNING] [openai/gpt-oss-120b] retard/erreur -> attente 4.3s (essai 2/5)
+2026-08-22 17:38:14,557 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:14,737 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:14,756 [INFO] [mistral-large-latest] 308/1500 textes traités (0 erreurs de parsing/réponse)
+2026-08-22 17:38:14,940 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:17,054 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:38:17,054 [WARNING] [openai/gpt-oss-120b] retard/erreur -> attente 8.7s (essai 3/5)
+2026-08-22 17:38:19,238 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:38:19,238 [INFO] Retrying request to /chat/completions in 0.388057 seconds
+2026-08-22 17:38:19,340 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:19,455 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:19,706 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:38:19,706 [INFO] Retrying request to /chat/completions in 0.847674 seconds
+2026-08-22 17:38:20,644 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:38:20,644 [WARNING] [mistral-large-latest] retard/erreur -> attente 2.2s (essai 1/8)
+2026-08-22 17:38:22,920 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:38:22,921 [INFO] Retrying request to /chat/completions in 0.388260 seconds
+2026-08-22 17:38:23,392 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:38:23,392 [INFO] Retrying request to /chat/completions in 0.776500 seconds
+2026-08-22 17:38:24,268 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:38:24,268 [WARNING] [mistral-large-latest] retard/erreur -> attente 4.8s (essai 2/8)
+2026-08-22 17:38:24,325 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:24,539 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:25,840 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:38:25,840 [WARNING] [openai/gpt-oss-120b] retard/erreur -> attente 16.8s (essai 4/5)
+2026-08-22 17:38:28,600 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:28,607 [INFO] [@cf/meta/llama-3.3-70b-instruct-fp8-fast] 554/1500 textes traités (0 erreurs de parsing/réponse)
+2026-08-22 17:38:29,147 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:38:29,147 [INFO] Retrying request to /chat/completions in 0.444327 seconds
+2026-08-22 17:38:29,551 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:29,676 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:38:29,676 [INFO] Retrying request to /chat/completions in 0.976248 seconds
+2026-08-22 17:38:30,756 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:38:30,756 [WARNING] [mistral-large-latest] retard/erreur -> attente 8.6s (essai 3/8)
+2026-08-22 17:38:33,251 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:34,462 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:39,446 [INFO] HTTP Request: POST https://api.cloudflare.com/client/v4/accounts/13c530a2588696e224178f7d60634329/ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:39,517 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-22 17:38:39,544 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:38:39,545 [INFO] Retrying request to /chat/completions in 0.420395 seconds
+2026-08-22 17:38:40,059 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:38:40,059 [INFO] Retrying request to /chat/completions in 0.933088 seconds
+2026-08-22 17:38:41,083 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-22 17:38:41,083 [WARNING] [mistral-large-latest] retard/erreur -> attente 16.0s (essai 4/8)
