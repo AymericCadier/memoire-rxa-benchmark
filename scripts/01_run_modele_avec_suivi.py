@@ -31,7 +31,7 @@ from openai import OpenAI
 load_dotenv()
 
 TIMEOUT_REQUETE = 45
-CLOUDFLARE_ACCOUNT_ID = "13c530a2588696e224178f7d60634329"
+CLOUDFLARE_ACCOUNT_ID = "56bed3f4f3f44255f36f8c49a9df640c"
 
 ETAT_FICHIER = pathlib.Path("etat_run.json")
 ETAT_LOCK = threading.Lock()
@@ -86,7 +86,7 @@ PROVIDERS = {
     "cloudflare": {
         "base_url": f"https://api.cloudflare.com/client/v4/accounts/{CLOUDFLARE_ACCOUNT_ID}/ai/v1",
         "key": os.environ.get("CLOUDFLARE_API_KEY"),
-        "rpm": 20, "max_tokens": 300, "max_essais": 5, "extra": {},
+        "rpm": 10, "max_tokens": 300, "max_essais": 5, "extra": {},
         "modeles": ["@cf/meta/llama-3.3-70b-instruct-fp8-fast"],
     },
 }
