@@ -1,10 +1,10 @@
-# Fiche protocole — Pré-enregistrement léger (v2)
+# Fiche protocole — Pré-enregistrement léger (version finale, post-run)
 
 **Mémoire M2 MIAGE — Benchmark de LLM génériques pour la détection de racisme, xénophobie et antisémitisme (dataset RXA)**
 
 Document figé avant le lancement de l'exécution complète (phase P5), conformément à la section 6.1 du protocole d'expérimentation contrôlée.
 
-*Mise à jour du 22/08/2026 : ajout d'une section infrastructure/suivi (§6bis), journal des incidents opérationnels (§6ter), et documentation de l'exploration infructueuse d'un 5e modèle (§3). Le panel et le prompt restent inchangés — aucune de ces modifications ne touche aux garanties méthodologiques figées le 20/08/2026.*
+*Mise à jour du 24/08/2026 (fin de journée) : run complet terminé et validé sur les 4 modèles du panel, consolidation effectuée (`predictions.csv`, 6 000 lignes), normalisation des accents appliquée (`predictions_normalise.csv`). Le protocole passe en phase P7 (calcul des métriques).*
 
 ---
 
@@ -29,9 +29,9 @@ Document figé avant le lancement de l'exécution complète (phase P5), conform�
 | Empreinte SHA-256 du prompt | *481E19D8097BF3FA3F7BE93AF3286DAD899A2F78D5314EB1939BFF7F6970BAE7* |
 | Date de gel | 20/08/2026 |
 | Format de sortie exigé | `{"categorie": "racisme"\|"xenophobie"\|"antisemitisme", "confiance": 0.0-1.0}` |
-| Modification post-pilote | Aucune. La confusion racisme/xénophobie observée au pilote n'a pas donné lieu à un ajustement du prompt (décision méthodologique : éviter le surajustement de l'instrument sur les données d'évaluation). |
+| Modification post-pilote | Aucune. |
 
-## 3. Panel de modèles retenu
+## 3. Panel de modèles retenu (final)
 
 | # | Fournisseur | Identifiant exact transmis à l'API | Éditeur | Rôle dans le comparatif |
 |---|---|---|---|---|
@@ -40,31 +40,29 @@ Document figé avant le lancement de l'exécution complète (phase P5), conform�
 | 3 | Mistral La Plateforme (plan Experiment) | `mistral-large-latest` | Mistral AI | Ouvert, européen |
 | 4 | Cloudflare Workers AI | `@cf/meta/llama-3.3-70b-instruct-fp8-fast` | Meta | Ouvert, grand |
 
-**Le panel reste fixé à 4 modèles.** Une exploration d'un éventuel 5e fournisseur a été menée le 22/08/2026 (cf. tableau ci-dessous) mais n'a pas abouti à un ajout — décision documentée pour la transparence du processus, sans impact sur le run déjà en cours sur les 4 modèles gelés.
+Le panel est resté fixé à ces 4 modèles jusqu'à la fin du run.
 
-### Fournisseurs/modèles testés et écartés (à documenter dans la discussion du mémoire)
+### Fournisseurs/modèles testés et écartés
 
 | Fournisseur/modèle | Date | Raison de l'abandon |
 |---|---|---|
 | GitHub Models | — | Accès jamais obtenu malgré tentatives |
-| OpenRouter (nemotron-3-nano-omni-reasoning, nemotron-3-super-120b, poolside/laguna-s-2.1, liquid/lfm-2.5-2.6b) | — | Pool gratuit partagé congestionné, 429 en cascade, refus/réponses vides sur contenu antisémite pour certains modèles Nvidia |
-| Cerebras (llama-3.3-70b puis gemma-4-31b) | — | Palier gratuit permanent supprimé ; carte bancaire vérifiée requise (erreur 402 Payment Required), incompatible avec le critère de gratuité stricte |
-| NVIDIA NIM (build.nvidia.com) | 20/08/2026 | Site d'inscription indisponible au moment du test initial |
-| Cohere (Trial API key) | — | Quota de 1 000 appels/mois insuffisant pour couvrir 1 500 textes en une passe |
-| `qwen/qwen3.6-27b` (Groq) | — | Modèle à raisonnement interne : consomme tout son budget de tokens en réflexion cachée, réponses vides même à 1200 tokens et en mode `reasoning_format="hidden"` |
-| `deepseek-ai/deepseek-v4-flash-0731` (NVIDIA Build) | 22/08/2026 | Accès obtenu (free tier sans carte bancaire, 1 000 crédits, ~40 rpm), mais latence de réponse jugée incompatible avec un traitement de 1 500 textes dans un délai raisonnable. Free tier basé sur des crédits (pas seulement un débit), risque supplémentaire d'épuisement en cours de run non quantifiable à l'avance. |
-| `allam-2-7b` (Groq) | 22/08/2026 | Accès obtenu, robuste techniquement (aucune réponse vide/JSON malformé sur le pilote à 100 textes). Écarté pour raison de qualité de classification : exactitude ≈ 61 % sur le pilote (bien inférieure aux 4 modèles retenus), biais massif vers la catégorie "xénophobie" (72 % des cas de racisme mal classés, 42 % des cas d'antisémitisme mal classés — alors que l'antisémitisme est détecté de façon fiable par les 4 modèles du panel). Modèle 7B, probablement sous-dimensionné et à dominante d'entraînement arabe/anglais pour une tâche fine en français. |
+| OpenRouter (nemotron-3-nano-omni-reasoning, nemotron-3-super-120b, poolside/laguna-s-2.1, liquid/lfm-2.5-2.6b) | — | Pool gratuit partagé congestionné, 429 en cascade, refus/réponses vides sur contenu antisémite |
+| Cerebras (llama-3.3-70b puis gemma-4-31b) | — | Carte bancaire vérifiée requise (402), incompatible avec la gratuité stricte |
+| NVIDIA NIM (build.nvidia.com), 1re tentative | 20/08/2026 | Site d'inscription indisponible |
+| Cohere (Trial API key) | — | Quota mensuel de 1 000 appels insuffisant |
+| `qwen/qwen3.6-27b` (Groq) | — | Raisonnement interne consommant tout le budget de tokens |
+| `deepseek-ai/deepseek-v4-flash-0731` (NVIDIA Build), 2e tentative | 22/08/2026 | Accès obtenu, mais latence trop élevée pour 1 500 textes |
+| `allam-2-7b` (Groq) | 22/08/2026 | Exactitude ≈ 61 % sur pilote, biais massif vers "xénophobie" (42 % d'antisémitisme mal classé) |
 
-## 4. Versions et dates d'accès
+## 4. Versions et dates d'accès (définitif)
 
-| Modèle | Date/heure du premier test réussi | Date/heure de fin du run complet |
+| Modèle | Premier test réussi | Fin du run complet |
 |---|---|---|
-| openai/gpt-oss-120b (Groq) | 19/08/2026 | *[à compléter — run multi-jours, cf. §6bis]* |
-| gemini-3.5-flash-lite | 19/08/2026 | *[à compléter]* |
-| mistral-large-latest | 19/08/2026 | *[à compléter]* |
-| @cf/meta/llama-3.3-70b-instruct-fp8-fast | 20/08/2026 | *[à compléter]* |
-
-*Note : les identifiants de version affichés par chaque fournisseur (le cas échéant) sont à consigner dans les journaux `logs/` au moment du run complet.*
+| openai/gpt-oss-120b (Groq) | 19/08/2026 | 24/08/2026 18:04 *(run multi-jours, plafonds RPD et TPD rencontrés)* |
+| gemini-3.5-flash-lite | 19/08/2026 | 24/08/2026 13:06 |
+| mistral-large-latest | 19/08/2026 | 24/08/2026 14:01 |
+| @cf/meta/llama-3.3-70b-instruct-fp8-fast | 20/08/2026 | 24/08/2026 17:56 *(repasse après incident "neurons" journaliers)* |
 
 ## 5. Paramètres d'appel
 
@@ -72,75 +70,76 @@ Document figé avant le lancement de l'exécution complète (phase P5), conform�
 |---|---|---|
 | `temperature` | 0 | — |
 | `top_p` | 1 | — |
-| `max_tokens` | 200 (Gemini, Mistral) | 400 (Groq gpt-oss-120b, raisonnement masqué), 300 (Cloudflare) |
+| `max_tokens` | 200 (Gemini, Mistral) | 400 (Groq gpt-oss-120b), 300 (Cloudflare) |
 | `reasoning_effort` | — | `"low"` pour openai/gpt-oss-120b uniquement |
-| Pénalités (`presence_penalty`, `frequency_penalty`) | Absentes | — |
+| Pénalités | Absentes | — |
 
-## 6. Gestion des limites de débit (par fournisseur)
+## 6. Gestion des limites de débit (par fournisseur, valeurs finales)
 
-| Fournisseur | rpm | max_essais | Backoff | Limite journalière connue |
+| Fournisseur | rpm | max_essais | Backoff | Limites journalières identifiées |
 |---|---|---|---|---|
-| Groq (gpt-oss-120b) | 30 | 5 | Exponentiel, plafonné à 60s | **1 000 requêtes/jour (RPD)** — découvert en cours de run complet le 22/08/2026 ; nécessite une exécution répartie sur plusieurs jours pour ce modèle uniquement (cf. §6ter) |
-| Gemini | **15** *(corrigé, initialement configuré à 30 par erreur — quota réel free tier confirmé par 429 le 22/08/2026)* | 5 | Exponentiel, plafonné à 60s | Non identifiée |
-| Mistral | 15 | 8 | Exponentiel, plafonné à 60s (ajusté après le pilote suite à des 429 fréquents) | Non identifiée |
-| Cloudflare | 20 | 5 | Exponentiel, plafonné à 60s | Non identifiée |
+| Groq (gpt-oss-120b) | 30 | 5 | Exponentiel, plafonné à 60s | 1 000 requêtes/jour (RPD) **et** 200 000 tokens/jour (TPD) — run réparti sur plusieurs jours |
+| Gemini | 15 (corrigé) | 5 | Exponentiel, plafonné à 60s | Aucune rencontrée |
+| Mistral | 15 | 8 | Exponentiel, plafonné à 60s | Aucune rencontrée |
+| Cloudflare | 20 | 5 | Exponentiel, plafonné à 60s | 10 000 "neurons"/jour |
 
-## 6bis. Infrastructure d'exécution et suivi (ajout du 22/08/2026)
-
-Pour sécuriser le run complet (1 500 textes × 4 modèles, plusieurs heures d'exécution ininterrompue), l'infrastructure d'exécution a été renforcée sans modifier la logique de classification ni le prompt :
+## 6bis. Infrastructure d'exécution et suivi
 
 | Composant | Rôle |
 |---|---|
-| `etat_run.json` | État global, mis à jour à chaque texte traité (thread-safe, écriture atomique via fichier temporaire + `os.replace`). Contient pour chaque modèle : nombre traité/total, statut (`en_cours`/`termine`/`arrete_credentials`/`arrete_erreur`), nombre d'erreurs, horodatage de dernière mise à jour. |
-| `logs/run_*.log` | Journalisation fichier (module `logging`, en plus de la console) de tous les événements (retries, arrêts, erreurs), pour conserver la trace même en cas de fermeture du terminal. |
-| `scripts/02_suivi_run.py` | Visualiseur de progression en temps réel (lecture de `etat_run.json` toutes les 5s), lancé dans un terminal séparé pendant le run, sans interférer avec l'écriture des résultats. |
-| Distinction erreur fatale / récupérable | Les erreurs de type 401/403/quota (credentials invalides) interrompent immédiatement le fournisseur concerné plutôt que d'épuiser les `max_essais` sur chaque texte restant, limitant la perte de temps en cas d'expiration de clé en cours de run. |
+| `etat_run.json` | État global par modèle (statut, progression, erreurs), lu par le visualiseur. Limite connue : ne cumule pas les erreurs entre sessions de reprise (le comptage fiable est celui fait après coup sur `raw_outputs`). |
+| `logs/run_*.log` | Journalisation fichier complète. |
+| `scripts/02_suivi_run.py` | Visualiseur de progression en temps réel. |
+| `scripts/02_consolider_resultats.py` | Fusionne les 4 `raw_outputs/*.jsonl` en `predictions.csv`, avec vérification de doublons/manquants. |
+| `scripts/03_diagnostiquer_problemes.py` | Répartition des `probleme` par modèle, `sous_type`, `source_generation`. |
+| `scripts/04_compter_erreurs_quota.py` / `05_nettoyer_pour_repasse.py` | Détection et retrait ciblé des échecs liés à un quota journalier, pour repasse ultérieure. |
+| `scripts/04_normaliser_predictions.py` | Normalise les accents de `verite` pour la rendre comparable à `label`, produit `predictions_normalise.csv` avec une colonne `correct`. |
 
-Ces ajouts sont purement opérationnels (traçabilité et robustesse de l'exécution) et n'affectent ni le prompt, ni les paramètres d'appel, ni la logique de classification déjà gelés depuis le 20/08/2026.
+## 6ter. Journal des incidents opérationnels (clos)
 
-## 6ter. Journal des incidents opérationnels (22/08/2026)
+| Date | Incident | Cause | Résolution | Impact final sur les données |
+|---|---|---|---|---|
+| 22/08 | Gemini : 429 en cascade | rpm mal configuré (30 au lieu de 15) | rpm corrigé à 15 | Aucun |
+| 22/08 | Groq gpt-oss-120b : 429 persistant | Plafond RPD (1 000/jour) | Run réparti sur plusieurs jours | Aucun |
+| 22/08 | Cloudflare : 404 en boucle | Bug de code (f-string manquant) | Code corrigé | Lignes retirées et retraitées |
+| 22/08 | `etat_run.json` : accès refusé | Process Python résiduel | Process tués, retry ajouté | Aucun |
+| 24/08 | Groq gpt-oss-120b : 129 textes en échec (TPD, 200 000 tokens/jour) | Plafond journalier distinct du RPD | Nettoyage + repasse après reset | **Résolu, 0 échec technique résiduel** |
+| 24/08 | Cloudflare : 61 textes en échec ("neurons"/jour) | Budget journalier free tier épuisé | Nettoyage + repasse | **Résolu, 0 échec technique résiduel** |
 
-Documenté pour la transparence et la reproductibilité, conformément à l'esprit du pré-enregistrement. Aucun de ces incidents n'a nécessité de modification du prompt ou du panel de modèles.
+## 7. Résultats finaux du run complet (1 500 textes × 4 modèles)
 
-| Incident | Cause | Résolution | Impact sur les données |
+| Modèle | `probleme` sur 1 500 | Taux | Nature |
 |---|---|---|---|
-| Gemini : 429 en cascade | rpm configuré à 30, quota réel free tier = 15 rpm (`generate_content_free_tier_requests`) | rpm corrigé à 15 dans la config (§6) | Aucun texte perdu, textes en erreur relancés via le mécanisme de reprise |
-| Groq gpt-oss-120b : 429 persistant même après ajustement rpm | Plafond journalier (RPD) de 1 000 requêtes/jour découvert en cours de run, non documenté à l'avance | Run réparti sur plusieurs jours calendaires pour ce modèle uniquement, via le mécanisme de reprise natif du script | Aucun texte perdu, allongement du délai de complétion pour ce modèle |
-| Cloudflare : 404 en boucle | Bug de code — variable `CLOUDFLARE_ACCOUNT_ID` non interpolée dans l'URL de base (f-string manquant) suite à une modification du script | Correction du code, ligne `base_url` vérifiée | Lignes d'erreur générées pendant l'incident retirées manuellement du fichier `raw_outputs` correspondant avant reprise, pour permettre leur retraitement |
-| `etat_run.json` : accès refusé (WinError 5) | Probable process Python résiduel non arrêté après une tentative d'interruption (Ctrl+C insuffisant face à `ThreadPoolExecutor.shutdown(wait=True)`) | Arrêt forcé de tous les process Python résiduels avant relance ; ajout d'une logique de nouvelle tentative sur l'écriture atomique de l'état | Aucun impact sur `raw_outputs` (écriture flush ligne par ligne, indépendante de `etat_run.json`) |
+| openai/gpt-oss-120b (Groq) | 13 | 0,87 % | 10 `reponse_vide` + 3 `parsing_echoue`, résiduel légitime (raisonnement masqué), sous le seuil de 2 % du pilote |
+| gemini-3.5-flash-lite | 0 | 0 % | — |
+| mistral-large-latest | 0 | 0 % | — |
+| @cf/meta/llama-3.3-70b-instruct-fp8-fast | 0 | 0 % | Après repasse post-incident "neurons" |
 
-## 7. Run pilote (phase P4) — résultats et validation
+**Décision retenue conformément au protocole** : les 13 cas résiduels sur gpt-oss-120b ne sont pas retraités (règle anti-ajustement post-hoc) et comptent comme prédiction incorrecte en mesure stricte, avec recalcul en mesure conditionnelle prévu en phase P7.
 
-| Modèle | Nombre de `probleme` sur 100 textes | Décision |
-|---|---|---|
-| openai/gpt-oss-120b (Groq) | 1 (`reponse_vide`) | Sous le seuil de 2 % — validé |
-| gemini-3.5-flash-lite | 0 | Validé |
-| mistral-large-latest | 0 (après ajustement rpm 30→15 et max_essais 5→8) | Validé |
-| @cf/meta/llama-3.3-70b-instruct-fp8-fast | 0 | Validé |
+**Pour mémoire (hors panel)** : `allam-2-7b` testé le 22/08/2026, exactitude ≈ 61 % sur pilote, non intégré (cf. §3).
 
-**Critère de passage retenu** : taux d'erreur de parsing/refus < 2 % par modèle — atteint pour les 4 modèles. Le panel et le prompt sont gelés à partir du 20/08/2026.
-
-**Observation qualitative du pilote (à documenter, non corrective sur le prompt)** : confusion racisme↔xénophobie observée de façon convergente chez les 4 modèles sur les mêmes textes ambigus (ex. stéréotypes essentialisants sur l'origine). L'antisémitisme est détecté de façon fiable par tous les modèles. `openai/gpt-oss-120b` présente une bonne calibration : ses erreurs s'accompagnent de scores de confiance nettement plus bas que ses réponses correctes.
-
-**Pour mémoire (candidat hors panel testé le 22/08/2026)** : `allam-2-7b` (Groq) a été testé sur le même sous-échantillon pilote à titre exploratoire. Résultat : exactitude ≈ 61 %, biais marqué vers "xénophobie" y compris sur des textes antisémites (42 % mal classés). Ce résultat n'entre pas dans le comparatif retenu (modèle non intégré au panel, cf. §3) mais pourra être mentionné en discussion comme point de comparaison sur l'effet de la taille du modèle.
-
-## 8. Métriques et tests statistiques prévus
+## 8. Métriques et tests statistiques prévus (phase P7/P8, à exécuter)
 
 | Élément | Choix |
 |---|---|
 | Métrique principale | macro-F1 |
 | Métriques secondaires | Accuracy, précision/rappel par classe, kappa de Cohen, taux de refus (stricte et conditionnelle), taux d'erreur de parsing, latence médiane |
-| Politique de traitement des refus | Un refus/`reponse_vide` compte comme une prédiction incorrecte en mesure stricte ; métriques recalculées en mesure conditionnelle sur les seules réponses exploitables |
-| Analyses stratifiées | Par `sous_type` (9 catégories) et par `source_generation` (6 catégories) |
-| Test de comparaison par paires | McNemar (version binomiale exacte si b+c < 25) |
-| Correction multi-tests | Bonferroni, α ajusté = 0,05 / 6 (6 paires pour 4 modèles) |
+| Politique de traitement des refus | Refus/`reponse_vide` = prédiction incorrecte en mesure stricte ; recalcul en mesure conditionnelle sur les réponses exploitables |
+| Analyses stratifiées | Par `sous_type` (9 catégories) et `source_generation` (6 catégories) |
+| Comparaison par paires | McNemar (binomiale exacte si b+c < 25) |
+| Correction multi-tests | Bonferroni, α ajusté = 0,05 / 6 |
 | Test global | Q de Cochran |
 | Intervalles de confiance | Bootstrap non paramétrique, 1 000 ré-échantillonnages, seed = 42 |
+| **Prérequis technique** | Normaliser les accents de `verite` avant tout calcul (`verite_norm` vs `label`) — géré par `04_normaliser_predictions.py` |
 
-## 9. Éléments restant à compléter après le run complet
+## 9. Éléments restant à compléter
 
-- [ ] Empreinte SHA-256 du corpus et du prompt (à insérer ci-dessus)
-- [ ] Dates et heures exactes de fin de run par modèle (Groq gpt-oss-120b : run multi-jours du fait du plafond RPD, cf. §6/§6ter)
-- [ ] Identifiants de version renvoyés par chaque fournisseur si disponibles
-- [ ] Vérification finale du taux de `probleme` sur les 1 500 textes (pas seulement le pilote)
-- [ ] Nettoyage confirmé des lignes d'erreur liées aux incidents opérationnels du 22/08/2026 (Cloudflare 404, éventuels doublons d'`id` dans `raw_outputs`)
+- [x] Run complet des 1 500 textes sur les 4 modèles (24/08/2026)
+- [x] Consolidation en table unique (`predictions.csv`, 6 000 lignes, 0 doublon/manquant)
+- [x] Nettoyage des résidus hors panel (`allam-2-7b`)
+- [x] Normalisation des accents (`predictions_normalise.csv`)
+- [ ] Calcul des métriques P7 (matrices de confusion, macro-F1, kappa, analyses stratifiées)
+- [ ] Tests statistiques P8 (McNemar, Cochran, bootstrap)
+- [ ] Identifiants de version exacts renvoyés par chaque fournisseur, si disponibles
+- [ ] Rédaction du chapitre méthodologique intégrant le journal d'incidents comme illustration des limites de la "gratuité stricte"
