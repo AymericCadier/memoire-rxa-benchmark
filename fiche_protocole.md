@@ -1,10 +1,10 @@
-# Fiche protocole — Pré-enregistrement léger (version finale, post-run)
+# Fiche protocole — Pré-enregistrement léger (version finale, post-run, post-P7/P8)
 
 **Mémoire M2 MIAGE — Benchmark de LLM génériques pour la détection de racisme, xénophobie et antisémitisme (dataset RXA)**
 
 Document figé avant le lancement de l'exécution complète (phase P5), conformément à la section 6.1 du protocole d'expérimentation contrôlée.
 
-*Mise à jour du 24/08/2026 (fin de journée) : run complet terminé et validé sur les 4 modèles du panel, consolidation effectuée (`predictions.csv`, 6 000 lignes), normalisation des accents appliquée (`predictions_normalise.csv`). Le protocole passe en phase P7 (calcul des métriques).*
+*Mise à jour du 25/08/2026 : phases P7 (calcul des métriques) et P8 (tests statistiques) terminées et validées. Scripts `scripts/03_calculer_metriques.py` et `scripts/04_tests_statistiques.py` exécutés de bout en bout, sorties vérifiées ligne à ligne (cohérence des effectifs, convergence croisée McNemar/bootstrap). Le protocole passe en phase P9 (rédaction et discussion des résultats).*
 
 ---
 
@@ -28,7 +28,7 @@ Document figé avant le lancement de l'exécution complète (phase P5), conform�
 | Stratégie | Zero-shot |
 | Empreinte SHA-256 du prompt | *481E19D8097BF3FA3F7BE93AF3286DAD899A2F78D5314EB1939BFF7F6970BAE7* |
 | Date de gel | 20/08/2026 |
-| Format de sortie exigé | `{"categorie": "racisme"\|"xenophobie"\|"antisemitisme", "confiance": 0.0-1.0}` |
+| Format de sortie exigé | `{"categorie": "racisme"|"xenophobie"|"antisemitisme", "confiance": 0.0-1.0}` |
 | Modification post-pilote | Aucune. |
 
 ## 3. Panel de modèles retenu (final)
@@ -94,6 +94,8 @@ Le panel est resté fixé à ces 4 modèles jusqu'à la fin du run.
 | `scripts/03_diagnostiquer_problemes.py` | Répartition des `probleme` par modèle, `sous_type`, `source_generation`. |
 | `scripts/04_compter_erreurs_quota.py` / `05_nettoyer_pour_repasse.py` | Détection et retrait ciblé des échecs liés à un quota journalier, pour repasse ultérieure. |
 | `scripts/04_normaliser_predictions.py` | Normalise les accents de `verite` pour la rendre comparable à `label`, produit `predictions_normalise.csv` avec une colonne `correct`. |
+| `scripts/03_calculer_metriques.py` | **[Nouveau]** Phase P7 : matrices de confusion, accuracy, macro-F1, kappa (stricte/conditionnelle), précision/rappel/F1 par classe, taux de refus, stratifications par `sous_type` et `source_generation`, latence médiane, analyses de confiance (calibration, risque-couverture, confiance par sous-type). Sorties dans `outputs_P7/`. |
+| `scripts/04_tests_statistiques.py` | **[Nouveau]** Phase P8 : McNemar par paires (exact/khi2 selon b+c), correction de Bonferroni, test Q de Cochran, IC bootstrap non paramétrique (1000 tirages, seed=42) sur macro-F1/accuracy par modèle et sur les écarts par paire. Sorties dans `outputs_P8/`. |
 
 ## 6ter. Journal des incidents opérationnels (clos)
 
@@ -115,11 +117,11 @@ Le panel est resté fixé à ces 4 modèles jusqu'à la fin du run.
 | mistral-large-latest | 0 | 0 % | — |
 | @cf/meta/llama-3.3-70b-instruct-fp8-fast | 0 | 0 % | Après repasse post-incident "neurons" |
 
-**Décision retenue conformément au protocole** : les 13 cas résiduels sur gpt-oss-120b ne sont pas retraités (règle anti-ajustement post-hoc) et comptent comme prédiction incorrecte en mesure stricte, avec recalcul en mesure conditionnelle prévu en phase P7.
+**Décision retenue conformément au protocole** : les 13 cas résiduels sur gpt-oss-120b ne sont pas retraités (règle anti-ajustement post-hoc) et comptent comme prédiction incorrecte en mesure stricte, avec recalcul en mesure conditionnelle (appliqué en phase P7, cf. §8bis).
 
 **Pour mémoire (hors panel)** : `allam-2-7b` testé le 22/08/2026, exactitude ≈ 61 % sur pilote, non intégré (cf. §3).
 
-## 8. Métriques et tests statistiques prévus (phase P7/P8, à exécuter)
+## 8. Métriques et tests statistiques prévus (phase P7/P8 — **réalisé**, cf. §8bis)
 
 | Élément | Choix |
 |---|---|
@@ -133,13 +135,54 @@ Le panel est resté fixé à ces 4 modèles jusqu'à la fin du run.
 | Intervalles de confiance | Bootstrap non paramétrique, 1 000 ré-échantillonnages, seed = 42 |
 | **Prérequis technique** | Normaliser les accents de `verite` avant tout calcul (`verite_norm` vs `label`) — géré par `04_normaliser_predictions.py` |
 
+## 8bis. Résultats obtenus (phases P7 et P8, clos le 25/08/2026)
+
+### Tableau 10 — Résultats principaux (modèles × métriques), mesure stricte
+
+| Modèle | Accuracy | Macro-F1 | Kappa | Taux de refus |
+|---|---|---|---|---|
+| gemini-3.5-flash-lite | 0,836 | 0,8324 | 0,754 | 0 % |
+| mistral-large-latest | 0,826 | 0,8221 | 0,739 | 0 % |
+| openai/gpt-oss-120b | 0,736 | 0,7380 | 0,6057 | 0,87 % |
+| @cf/meta/llama-3.3-70b-instruct-fp8-fast | 0,724 | 0,7207 | 0,586 | 0 % |
+
+IC bootstrap à 95 % (macro-F1, 1000 tirages, seed=42) : Gemini [0,8151 ; 0,8504], Mistral [0,8039 ; 0,8409], gpt-oss-120b [0,7174 ; 0,7599], Llama [0,6985 ; 0,7421] — les deux groupes {Gemini, Mistral} et {gpt-oss-120b, Llama} ne se chevauchent pas.
+
+### McNemar par paires (6 comparaisons, α ajusté Bonferroni = 0,008333)
+
+| Paire | b+c | Méthode | p-value | Significatif (ajusté) |
+|---|---|---|---|---|
+| Llama vs Gemini | 220 | khi2_continuité | < 0,0001 | Oui |
+| Llama vs Mistral | 219 | khi2_continuité | < 0,0001 | Oui |
+| Mistral vs gpt-oss-120b | 221 | khi2_continuité | < 0,0001 | Oui |
+| Gemini vs gpt-oss-120b | 230 | khi2_continuité | < 0,0001 | Oui |
+| Gemini vs Mistral | 109 | khi2_continuité | 0,180 | **Non** |
+| Llama vs gpt-oss-120b | 176 | khi2_continuité | 0,200 | **Non** |
+
+Convergence confirmée avec les IC bootstrap sur l'écart de macro-F1 par paire : les deux mêmes paires (Gemini-Mistral et Llama-gptoss) sont les seules dont l'IC à 95 % inclut 0.
+
+**Interprétation retenue** : le panel se structure statistiquement en **deux groupes homogènes** plutôt qu'en un classement continu à 4 niveaux — {Gemini, Mistral} significativement supérieur à {gpt-oss-120b, Llama 3.3 70B}, sans différence significative intra-groupe.
+
+### Test Q de Cochran (test global)
+
+Q = 237,21, ddl = 3, p ≈ 3,82 × 10⁻⁵¹ (hautement significatif) → au moins un modèle diffère significativement des autres ; les comparaisons par paires (McNemar) sont statistiquement justifiées.
+
+### Points d'analyse complémentaire réalisés en P7
+
+- Confusion racisme→xénophobie confirmée sur gpt-oss-120b (42,4 % des textes racisme classés xénophobie), cohérente avec le biais déjà observé sur `allam-2-7b` au pilote (42 % d'antisémitisme mal classé) — signal d'un artefact structurel de la tâche plutôt que d'un défaut isolé à un modèle.
+- Stratification par `sous_type` : chute de performance nette sur `ambigu`, `hostilite_religieuse`, `dog_whistle` et `sarcasme` pour les 4 modèles, conforme à l'hypothèse H3.
+- Analyse risque-couverture : gpt-oss-120b montre le gain d'accuracy le plus fort entre seuil de confiance 0 et 0,9 (+21,9 points), suggérant une calibration de confiance relativement fiable malgré un macro-F1 global plus faible.
+- Comparaison à `allam-2-7b` (hors panel, 7B) : écart de 11 points d'accuracy avec le modèle du panel le plus faible (Llama 70B, 72,4 %), suggérant un effet de taille plus marqué que prévu par H1 en dessous d'un certain seuil de paramètres.
+
 ## 9. Éléments restant à compléter
 
 - [x] Run complet des 1 500 textes sur les 4 modèles (24/08/2026)
 - [x] Consolidation en table unique (`predictions.csv`, 6 000 lignes, 0 doublon/manquant)
 - [x] Nettoyage des résidus hors panel (`allam-2-7b`)
 - [x] Normalisation des accents (`predictions_normalise.csv`)
-- [ ] Calcul des métriques P7 (matrices de confusion, macro-F1, kappa, analyses stratifiées)
-- [ ] Tests statistiques P8 (McNemar, Cochran, bootstrap)
+- [x] Calcul des métriques P7 (matrices de confusion, macro-F1, kappa, analyses stratifiées, confiance) — `outputs_P7/`
+- [x] Tests statistiques P8 (McNemar, Cochran, bootstrap) — `outputs_P8/`
 - [ ] Identifiants de version exacts renvoyés par chaque fournisseur, si disponibles
+- [ ] Interprétation qualitative approfondie des résultats P7/P8 (confusion racisme/xénophobie sur les 4 modèles, calibration complète — en cours)
 - [ ] Rédaction du chapitre méthodologique intégrant le journal d'incidents comme illustration des limites de la "gratuité stricte"
+- [ ] Rédaction de la discussion des résultats en lien avec l'état de l'art (mémoire de référence M1)

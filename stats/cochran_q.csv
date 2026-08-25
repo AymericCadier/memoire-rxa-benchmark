@@ -1,0 +1,2 @@
+n_textes,n_modeles,statistique_Q,ddl,p_value,significatif_alpha_0_05,interpretation
+1500,4,237.2094,3,3.819152165327167e-51,True,Au moins un modèle diffère significativement des autres en taux de succès ; des comparaisons par paires (McNemar) sont justifiées.

@@ -1,0 +1,5 @@
+modele,latence_mediane_ms,latence_p25_ms,latence_p75_ms,latence_max_ms
+gemini-3.5-flash-lite,558.0,525.0,604.0,45998
+mistral-large-latest,685.0,610.0,983.8,82828
+openai/gpt-oss-120b,723.0,522.0,1049.2,98406
+@cf/meta/llama-3.3-70b-instruct-fp8-fast,742.5,624.0,992.5,33708

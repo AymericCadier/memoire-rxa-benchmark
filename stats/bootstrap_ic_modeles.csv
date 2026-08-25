@@ -1,0 +1,5 @@
+modele,macro_f1_moyen_bootstrap,macro_f1_ic95_bas,macro_f1_ic95_haut,accuracy_moyenne_bootstrap,accuracy_ic95_bas,accuracy_ic95_haut
+gemini-3.5-flash-lite,0.8323,0.8151,0.8504,0.8358,0.818,0.854
+mistral-large-latest,0.822,0.8039,0.8409,0.8259,0.8067,0.8453
+openai/gpt-oss-120b,0.7379,0.7174,0.7599,0.736,0.714,0.758
+@cf/meta/llama-3.3-70b-instruct-fp8-fast,0.7205,0.6985,0.7421,0.7239,0.7,0.746

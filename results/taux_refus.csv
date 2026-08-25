@@ -1,0 +1,5 @@
+modele,n_total,n_reponse_vide,n_parsing_echoue,n_refus_total,taux_refus_pct
+openai/gpt-oss-120b,1500,10,3,13,0.87
+@cf/meta/llama-3.3-70b-instruct-fp8-fast,1500,0,0,0,0.0
+gemini-3.5-flash-lite,1500,0,0,0,0.0
+mistral-large-latest,1500,0,0,0,0.0

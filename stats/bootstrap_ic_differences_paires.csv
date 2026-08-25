@@ -1,0 +1,7 @@
+modele_a,modele_b,difference_macro_f1_moyenne,ic95_bas,ic95_haut,ic_exclut_zero
+@cf/meta/llama-3.3-70b-instruct-fp8-fast,gemini-3.5-flash-lite,-0.1118,-0.1302,-0.0937,True
+@cf/meta/llama-3.3-70b-instruct-fp8-fast,mistral-large-latest,-0.1015,-0.1202,-0.0827,True
+gemini-3.5-flash-lite,openai/gpt-oss-120b,0.0944,0.0753,0.1154,True
+mistral-large-latest,openai/gpt-oss-120b,0.0841,0.0643,0.103,True
+@cf/meta/llama-3.3-70b-instruct-fp8-fast,openai/gpt-oss-120b,-0.0174,-0.0367,0.0003,False
+gemini-3.5-flash-lite,mistral-large-latest,0.0103,-0.003,0.024,False

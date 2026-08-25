@@ -1,0 +1,7 @@
+modele_a,modele_b,n_discordant_b_A_correct_B_incorrect,n_discordant_c_A_incorrect_B_correct,b_plus_c,methode,statistique,p_value,alpha_brut,significatif_alpha_brut,alpha_ajuste_bonferroni,significatif_alpha_ajuste
+@cf/meta/llama-3.3-70b-instruct-fp8-fast,gemini-3.5-flash-lite,26,194,220,khi2_continuite,126.7682,0.0,0.05,True,0.008333,True
+@cf/meta/llama-3.3-70b-instruct-fp8-fast,mistral-large-latest,33,186,219,khi2_continuite,105.4977,0.0,0.05,True,0.008333,True
+mistral-large-latest,openai/gpt-oss-120b,178,43,221,khi2_continuite,81.2489,0.0,0.05,True,0.008333,True
+gemini-3.5-flash-lite,openai/gpt-oss-120b,190,40,230,khi2_continuite,96.5261,0.0,0.05,True,0.008333,True
+gemini-3.5-flash-lite,mistral-large-latest,62,47,109,khi2_continuite,1.7982,0.179934,0.05,False,0.008333,False
+@cf/meta/llama-3.3-70b-instruct-fp8-fast,openai/gpt-oss-120b,79,97,176,khi2_continuite,1.642,0.200045,0.05,False,0.008333,False
