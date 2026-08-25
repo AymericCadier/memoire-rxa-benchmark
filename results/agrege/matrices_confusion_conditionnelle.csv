@@ -1,0 +1,13 @@
+modele,verite,predit_racisme,predit_xenophobie,predit_antisemitisme
+_cf_meta_llama-3_3-70b-instruct-fp8-fast,vrai_racisme,230,267,3
+_cf_meta_llama-3_3-70b-instruct-fp8-fast,vrai_xenophobie,13,487,0
+_cf_meta_llama-3_3-70b-instruct-fp8-fast,vrai_antisemitisme,22,109,369
+gemini-3_5-flash-lite,vrai_racisme,303,192,5
+gemini-3_5-flash-lite,vrai_xenophobie,23,472,5
+gemini-3_5-flash-lite,vrai_antisemitisme,8,13,479
+mistral-large-latest,vrai_racisme,297,199,4
+mistral-large-latest,vrai_xenophobie,29,465,6
+mistral-large-latest,vrai_antisemitisme,15,8,477
+openai_gpt-oss-120b,vrai_racisme,280,212,4
+openai_gpt-oss-120b,vrai_xenophobie,34,464,0
+openai_gpt-oss-120b,vrai_antisemitisme,93,40,360

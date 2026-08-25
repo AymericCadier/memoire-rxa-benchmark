@@ -1,0 +1,5 @@
+modele,n_total,n_refus,taux_refus_pct,accuracy_stricte,accuracy_conditionnelle,macro_f1_stricte,macro_f1_conditionnelle,kappa_stricte,kappa_conditionnelle,n_reponse_vide,n_parsing_echoue,n_refus_total,latence_mediane_ms,latence_p25_ms,latence_p75_ms,latence_max_ms,confiance_mediane_correct,confiance_mediane_incorrect,ecart_confiance_correct_vs_incorrect,n_correct,n_incorrect
+gemini-3.5-flash-lite,1500,0,0.0,0.836,0.836,0.8324,0.8324,0.754,0.754,0,0,0,558.0,525.0,604.0,45998,0.95,0.85,0.1,1254,246
+mistral-large-latest,1500,0,0.0,0.826,0.826,0.8221,0.8221,0.739,0.739,0,0,0,685.0,610.0,983.8,82828,0.95,0.85,0.1,1239,261
+openai/gpt-oss-120b,1500,13,0.87,0.736,0.7424,0.738,0.7416,0.6057,0.6134,10,3,13,723.0,522.0,1049.2,98406,0.96,0.6,0.36,1104,383
+@cf/meta/llama-3.3-70b-instruct-fp8-fast,1500,0,0.0,0.724,0.724,0.7207,0.7207,0.586,0.586,0,0,0,742.5,624.0,992.5,33708,0.9,0.8,0.1,1086,414
